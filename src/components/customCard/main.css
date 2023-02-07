@@ -1,0 +1,120 @@
+:root{
+  --black:#070707;
+  --lightpink:#FFF0D3;
+  --skyblue:#0479B7;
+  --lightgray:#C4C4C4;
+  --deepgray:#797979;
+  --gray:#B1B1B1;
+  --light:#FFFCF7;
+  --tokoisblue:#04B786;
+  --cyan:#D3EFFF;
+  --lighter:#F7FCFF;
+  --deepgreen:#04B751 ;
+  --lightred:#FF0000 ;
+  --deepred:#B70404;
+  --white:#FFFFFF;
+}
+
+.custom-modal{
+  background: var(--lighter)
+}
+
+.card {
+    /* width: calc(33.33% - 20px); */
+     /* adjust width as needed */
+    display: block;
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card .buttons {
+    display: none; /* hide buttons by default */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px;
+  }
+
+  .card .buttons {
+    display: none; /* hide buttons by default */
+    position: absolute;
+    bottom: 15%;
+    align-items: center;
+    right: 25%;
+  }
+  
+  .card:hover .buttons {
+    display: inline-block; /* show buttons on hover */
+  }
+  
+  .card .buttons button {
+    background-color: #333;
+    color: #fff;
+    /* padding: 5px 10px; */
+    border-radius: 5px;
+    /* margin-right: 5px; */
+  }
+
+  button.btn-vote-white{
+    display: relative;
+    background: transparent linear-gradient(180deg, #AEFDAD 0%, #FF9F9F 46%, #9FE0FF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color:#070707;
+    opacity: 1;
+    backdrop-filter: blur(17px);
+    /* -webkit-backdrop-filter: blur(17px); */
+    text-align: center !important;
+}
+    button.btn-vote-black{
+    display: relative;
+    background:var(--black);
+    color:var(--white);
+    z-index: 1;
+}
+
+.modal-lg {
+  max-width: 100%;
+}
+
+.modal-xl {
+  max-width: 80%;
+}
+
+input[type="radio"].custom-control-input:checked ~ .custom-control-indicator {
+  background-color:var(--skyblue);
+}
+
+.location-bg{
+  background:white;
+  color:var(--black);
+  border:3px solid var(--skyblue);
+}
+
+ .location-bg:visited, .location-bg:hover, .location-bg:active, .location-bg:checked, .location-bg:focus{
+    background:var(--skyblue);
+    color:var(--white);
+}
+
+.pvc-bg{
+  background:white;
+  color:var(--black);
+  border:3px solid var(--skyblue);
+}
+
+.pvc-bg:visited, .pvc-bg:hover, .pvc-bg:active, .pvc-bg:checked, .pvc-bg:focus{
+  background:var(--skyblue);
+  color:var(--white);
+}

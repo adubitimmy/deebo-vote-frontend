@@ -1,0 +1,30 @@
+/* color theme */
+:root{
+    --black:#070707;
+    --lightpink:#FFF0D3;
+    --skyblue:#0479B7;
+    --lightgray:#C4C4C4;
+    --deepgray:#797979;
+    --gray:#B1B1B1;
+    --light:#FFFCF7;
+    --tokoisblue:#04B786;
+    --cyan:#D3EFFF;
+    --lighter:#F7FCFF;
+    --deepgreen:#04B751 ;
+    --lightred:#FF0000 ;
+    --deepred:#B70404;
+    --white:#FFFFFF;
+  }
+button.btn-black{
+    background:var(--black);
+    color:white;
+}
+
+input{
+    border: 5px solid var(--black);
+}
+
+/* button background color */
+button{
+    background-color: var(--black);
+}
